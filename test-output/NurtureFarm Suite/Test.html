@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 26 18:43:01 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>818 seconds (818148 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Regression Test </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.TestCases.ListingsTest.List()'><b>List</b><br>Test class: com.qa.TestCases.ListingsTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;/seedhop-ui/static/media/Crop.c1f25063.svg&quot;&gt; is not clickable at point (82, 601). Other element would receive the click: &lt;div class=&quot;modal display-block&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CHALAMA&apos;, ip: &apos;10.2.3.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CHALAMA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53722}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a363705a2869984eed5949bff7feecf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.PageObjects.Listings.List(Listings.java:47)
+	at com.qa.TestCases.ListingsTest.List(ListingsTest.java:13)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace73878928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace73878928'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;/seedhop-ui/static/media/Crop.c1f25063.svg&quot;&gt; is not clickable at point (82, 601). Other element would receive the click: &lt;div class=&quot;modal display-block&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CHALAMA&apos;, ip: &apos;10.2.3.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CHALAMA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53722}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a363705a2869984eed5949bff7feecf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.PageObjects.Listings.List(Listings.java:47)
+	at com.qa.TestCases.ListingsTest.List(ListingsTest.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>34</td>
+<td>com.qa.TestCases.ListingsTest@49070868</td></tr>
+<tr>
+<td title='com.qa.TestCases.SellersDashboardTest.SellerDashboard()'><b>SellerDashboard</b><br>Test class: com.qa.TestCases.SellersDashboardTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;+ Create New Listing&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CHALAMA&apos;, ip: &apos;10.2.3.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CHALAMA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b83d4b96b3b0b9d849ce4a03ea49737d
+*** Element info: {Using=xpath, value=//div[text()=&apos;+ Create New Listing&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.qa.PageObjects.SellersDashboard.sellerDashboard(SellersDashboard.java:47)
+	at com.qa.TestCases.SellersDashboardTest.SellerDashboard(SellersDashboardTest.java:13)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318755294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318755294'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;+ Create New Listing&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CHALAMA&apos;, ip: &apos;10.2.3.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CHALAMA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b83d4b96b3b0b9d849ce4a03ea49737d
+*** Element info: {Using=xpath, value=//div[text()=&apos;+ Create New Listing&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.qa.PageObjects.SellersDashboard.sellerDashboard(SellersDashboard.java:47)
+	at com.qa.TestCases.SellersDashboardTest.SellerDashboard(SellersDashboardTest.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>45</td>
+<td>com.qa.TestCases.SellersDashboardTest@64d7f7e0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.TestCases.BuyersDashboardTest.BuyerDashboard()'><b>BuyerDashboard</b><br>Test class: com.qa.TestCases.BuyersDashboardTest</td>
+<td></td>
+<td>28</td>
+<td>com.qa.TestCases.BuyersDashboardTest@27c6e487</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: 12#@@13334, 123$%%^^&134, 31726!&!^, %$#%13133, 12143212465@gmail.com</td>
+<td></td>
+<td>22</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: Olivia, Ella, nurture12, nurture12, nurture12@gmail.com</td>
+<td></td>
+<td>22</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: samson, Max, nurture12, QWEEEqrtt234, nurture15@gmail.com</td>
+<td></td>
+<td>21</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: Chole, Harper, Nurture@12, Nurture@12, Nurture1!@12@gmail.com</td>
+<td></td>
+<td>21</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: Alice, Hazel, Vnc@2020, Vnc@2020, shane@gmail.com</td>
+<td></td>
+<td>21</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.InvalidSignup()'><b>InvalidSignup</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: , , , , </td>
+<td></td>
+<td>21</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithBlank()'><b>LoginWithBlank</b><br>Test class: com.qa.TestCases.ManualLoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: nurtuuree@123@gmail.com, !##,,….((00</td>
+<td></td>
+<td>5</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: nurtut!!$$$%aa@gmail.com, Nurture$2020</td>
+<td></td>
+<td>5</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: nurturefarmtest1@gmail.com, <>><#$#%$^</td>
+<td></td>
+<td>5</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: !@###*(*&87899, !%!^%&>>/?</td>
+<td></td>
+<td>4</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: chalamareddy1994@gmail.com, Vnc@2021</td>
+<td></td>
+<td>5</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithInvalidData()'><b>LoginWithInvalidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: , </td>
+<td></td>
+<td>4</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.RegistrationTest.LoginWithNonRegister_GeneralDetails()'><b>LoginWithNonRegister_GeneralDetails</b><br>Test class: com.qa.TestCases.RegistrationTest<br>Parameters: nurturefarmtest4@gmail.com, Nurture@14, William, Certified seed growers ensure that seeds sold for growing different crops are healthy, high quality, and free of impurities, Richer Lands, nurturefarmtest4@gmail.com, contactus@richerland.com, 49157090, 90225611999, 132456890, 2800, 122 Woodbury Park Drv, CADIA</td>
+<td></td>
+<td>136</td>
+<td>com.qa.TestCases.RegistrationTest@6385cb26</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.LoginWithValidData()'><b>LoginWithValidData</b><br>Test class: com.qa.TestCases.ManualLoginTest<br>Parameters: nurturefarmtest1@gmail.com, Nurture@11</td>
+<td></td>
+<td>29</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+<tr>
+<td title='com.qa.TestCases.ProfileTest.Profile()'><b>Profile</b><br>Test class: com.qa.TestCases.ProfileTest</td>
+<td></td>
+<td>16</td>
+<td>com.qa.TestCases.ProfileTest@38364841</td></tr>
+<tr>
+<td title='com.qa.TestCases.RegistrationTest.Registration_FinancialDetails()'><b>Registration_FinancialDetails</b><br>Test class: com.qa.TestCases.RegistrationTest<br>Parameters: nurturefarmtest4@gmail.com, Richer lands, 90225611999, 122 Woodbury, Park Drv, CADIA, 2800, richerlandseed.com</td>
+<td></td>
+<td>62</td>
+<td>com.qa.TestCases.RegistrationTest@6385cb26</td></tr>
+<tr>
+<td title='com.qa.TestCases.RegistrationTest.Registration_TermsACondtions()'><b>Registration_TermsACondtions</b><br>Test class: com.qa.TestCases.RegistrationTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.TestCases.RegistrationTest@6385cb26</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.ValidSignupDetails()'><b>ValidSignupDetails</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: Alice, Hazel, Vnc@2020, Vnc@2020, nurture90@gmail.com</td>
+<td></td>
+<td>34</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.SignupTest.ValidSignupDetails()'><b>ValidSignupDetails</b><br>Test class: com.qa.TestCases.SignupTest<br>Parameters: Oliva, Paul, Vnc@2020, Vnc@2020, nurture91@gmail.com</td>
+<td></td>
+<td>34</td>
+<td>com.qa.TestCases.SignupTest@641147d0</td></tr>
+<tr>
+<td title='com.qa.TestCases.ManualLoginTest.VerifyTheLogo()'><b>VerifyTheLogo</b><br>Test class: com.qa.TestCases.ManualLoginTest</td>
+<td></td>
+<td>4</td>
+<td>com.qa.TestCases.ManualLoginTest@6e38921c</td></tr>
+</table><p>
+</body>
+</html>

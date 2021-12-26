@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="165279" started-at="2021-02-17T16:08:40 IST" finished-at="2021-02-17T16:11:25 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="165279" started-at="2021-02-17T16:08:40 IST" finished-at="2021-02-17T16:11:25 IST">
+      <class name="com.qa.TestCases.Contract_OrdersTest">
+        <test-method status="PASS" signature="initalization()[pri:0, instance:com.qa.TestCases.Contract_OrdersTest@4d95d2a2]" name="initalization" is-config="true" duration-ms="106583" started-at="2021-02-17T16:08:40 IST" finished-at="2021-02-17T16:10:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalization -->
+        <test-method status="PASS" signature="LoginWithBuyer(java.lang.String, java.lang.String)[pri:4, instance:com.qa.TestCases.Contract_OrdersTest@4d95d2a2]" name="LoginWithBuyer" duration-ms="21619" started-at="2021-02-17T16:10:43 IST" data-provider="ValidLogin" finished-at="2021-02-17T16:11:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nurturefarmtest4@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nurture@14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithBuyer -->
+        <test-method status="PASS" signature="BuyerProccedToPayment()[pri:5, instance:com.qa.TestCases.Contract_OrdersTest@4d95d2a2]" name="BuyerProccedToPayment" duration-ms="20482" started-at="2021-02-17T16:11:05 IST" finished-at="2021-02-17T16:11:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BuyerProccedToPayment -->
+        <test-method status="PASS" signature="End()[pri:0, instance:com.qa.TestCases.Contract_OrdersTest@4d95d2a2]" name="End" is-config="true" duration-ms="1" started-at="2021-02-17T16:11:25 IST" finished-at="2021-02-17T16:11:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+      </class> <!-- com.qa.TestCases.Contract_OrdersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

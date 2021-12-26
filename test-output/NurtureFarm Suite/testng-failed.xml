@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NurtureFarm Suite]">
+  <listeners>
+    <listener class-name="com.qa.Listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression Test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.TestCases.SellersDashboardTest">
+        <methods>
+          <include name="initalization"/>
+          <include name="SellerDashboard"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.SellersDashboardTest -->
+      <class name="com.qa.TestCases.ListingsTest">
+        <methods>
+          <include name="initalization"/>
+          <include name="List"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.ListingsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [NurtureFarm Suite] -->
